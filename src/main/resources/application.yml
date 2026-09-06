@@ -1,12 +1,12 @@
 spring:
   r2dbc:
-    url: r2dbc:postgresql://localhost:5432/andrej_projekt_1
-    username: postgres
-    password: Expedition78,
+    url: r2dbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:andrej_projekt_1}
+    username: ${DB_USER:AJAMRICH}
+    password: ${DB_PASSWORD:Expedition78,}
 
 jwt:
-  secret: 12345678901234567890123456789012
-  expiration-ms: 3600000
+  secret: ${JWT_SECRET:12345678901234567890123456789012}
+  expiration-ms: ${JWT_EXPIRATION_MS:3600000}
   issuer: api-gateway
   header: Authorization
   prefix: "Bearer "
