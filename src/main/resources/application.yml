@@ -1,0 +1,12 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/andrej_projekt_1
+    username: postgres
+    password: Expedition78,
+
+jwt:
+  secret: 12345678901234567890123456789012
+  expiration-ms: 3600000
+  issuer: api-gateway
+  header: Authorization
+  prefix: "Bearer "

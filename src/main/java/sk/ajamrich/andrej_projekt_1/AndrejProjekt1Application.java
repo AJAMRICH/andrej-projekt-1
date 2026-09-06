@@ -1,0 +1,13 @@
+package sk.ajamrich.andrej_projekt_1;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class AndrejProjekt1Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(AndrejProjekt1Application.class, args);
+	}
+
+}
